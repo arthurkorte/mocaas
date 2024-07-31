@@ -14,7 +14,7 @@ mocaas<-function (seq,method=c('best','worst','close'),replace='all')
   if (method=='worst') {
     W<-AA_table[,c(1,8)] }
   if (method=='close') {
-    W<-AA_table[,c(1,8)] }
+    W<-AA_table[,c(1,10)] }
   
   if ('all'%in%replace) { change <- 1:((length(seq)/3)-1)} else {
     change<-replace}
